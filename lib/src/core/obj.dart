@@ -1,14 +1,9 @@
-import 'package:json_annotation/json_annotation.dart';
-
 part 'obj.g.dart';
 
-@JsonSerializable()
 class CacheObj {
   String key;
   String? subKey;
-  @JsonKey(name: "max_age_date")
   int? maxAgeDate;
-  @JsonKey(name: "max_stale_date")
   int? maxStaleDate;
   List<int>? content;
   int? statusCode;
